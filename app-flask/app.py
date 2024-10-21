@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Hello from Flask app on port 5100!"
+    return "Hello from Flask app on port 5001!"
 
 # Exemplo de um endpoint que faz requisição ao microserviço de validação de token
 @app.route('/data', methods=['GET'])
