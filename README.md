@@ -19,5 +19,11 @@ curl -H "Authorization: valid-token" http://localhost:5001/validate
 
 ![validacao](https://github.com/user-attachments/assets/3a087f29-ba39-46d3-b604-963f54d8a283)
 
+Se vc estiver no powershell:
+
+```
+Invoke-WebRequest -Uri "http://localhost:5001/validate" -Headers @{ Authorization = "valid-token" }
+```
+
 
 ### Divirta-se
