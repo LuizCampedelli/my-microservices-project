@@ -1,0 +1,18 @@
+services:
+  flask-app:
+    build: ./app-flask
+    container_name: app-flask
+    ports:
+      - "5000:5000"
+    depends_on:
+      - token-validation
+    environment:
+      - FLASK_ENV=development
+
+  token-validation:
+    build: ./app-validacao
+    container_name: app-validacao
+    ports:
+      - "5001:5001"
+    environment:
+      - FLASK_ENV=development
